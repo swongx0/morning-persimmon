@@ -7,13 +7,16 @@ const Navbar = () => {
         <nav>
             <ul className={styles.menu}>
                 <li>
-                    <a href="/">About</a>
+                    <p><a href="/">About</a></p>
                 </li>
                 <li>
-                    <a href="/">Menu</a>
+                    <p><a href="/">Menu</a></p>
                 </li>
                 <li>
-                    <a href="/">RSVP</a>
+                    <p><a href="/">Gallery</a></p>
+                </li>
+                <li>
+                    <p><a href="/">RSVP</a></p>
                 </li>
             </ul>
         </nav>

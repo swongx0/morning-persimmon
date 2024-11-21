@@ -2,10 +2,58 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #EDE8DB;
+}
+
 ul li {
+  padding: 0;
   list-style: none;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 12vw;
+  margin: 0.5rem;
+  color: #BF5D30;
+}
+
+h2 {
+  font-size: 48px;
+  color: #BF5D30;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #343434;
 }
 
 a {
   text-decoration: none;
+  color: #343434;
+}
+
+/* HEADER SECTION */
+.hero-section {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-image {
+  position: absolute;
+  top: 200px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 720px) {
+    
 }

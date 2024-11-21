@@ -1,11 +1,12 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <img src="/Asset2.svg" alt="persimmon-character" width="250px"/>
+      <Home />
     </div>
   );
 }
