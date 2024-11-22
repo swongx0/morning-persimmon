@@ -1,11 +1,17 @@
+@import url("https://use.typekit.net/lvm6owx.css");
+@import url("https://use.typekit.net/lvm6owx.css");
+
 * {
   box-sizing: border-box;
 }
 
 html, body {
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
   width: 100%;
-  background-color: #EDE8DB;
+  /* background-color: #EDE8DB; */
+  background-color: #F0EFEC;
 }
 
 ul li {
@@ -16,9 +22,12 @@ ul li {
 /* TYPOGRAPHY */
 
 h1 {
-  font-size: 12vw;
+  font-family: "fields-display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 8.021vw;
   margin: 0.5rem;
-  color: #BF5D30;
+  color: rgb(254,144,18);
 }
 
 h2 {
@@ -31,6 +40,9 @@ h3 {
 }
 
 p {
+  font-family: "calibri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   color: #343434;
 }
@@ -53,7 +65,59 @@ a {
   top: 200px;
 }
 
+/* STORY SECTION */
+.story-section {
+  padding: 5rem 0 0 0;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+/* LOCATION SECTION */
+.location-section {
+  display: flex;
+  background-color: #BF5D30;
+  height: 550px;
+  padding: 5rem;
+  align-items: center;
+}
+
+.location-title-alt {
+  color: #EDE8DB;
+}
+
+/* IMAGE CARD SECTION */
+.image-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
 /* MOBILE */
 @media screen and (max-width: 720px) {
-    
+    .story-section {
+      flex-wrap: wrap;
+    }
+
+    .story-content {
+      width: 100%;
+      padding: 2rem;
+    }
 }
