@@ -5,8 +5,8 @@ function Home() {
   return (
     <div className="container">
         <div className='hero-section'>
-            <h1>Morning <br/> Persimmon</h1>
-            {/* <img className="hero-image" src="/Asset3.svg" alt="persimmon-character" width="250px"/> */}
+            <h1>morning <br/> persimmon</h1>
+            <img className="hero-image" src="/logo-alt.svg" alt="persimmon-character" width="200px"/>
         </div>
         <div className='story-section'>
             <div className='story-image'>
@@ -27,7 +27,9 @@ function Home() {
         <div className='image-card-section'>
             <h2>Delicious Goods</h2>
             <div className='image-card-container'>
-                <ImageCard />
+                <ImageCard imgSrc="https://placehold.co/200x260" imgAlt="Product details" description="Chestnut Latte"/>
+                <ImageCard imgSrc="https://placehold.co/200x260" imgAlt="Product details" description="Chestnut Latte"/>
+                <ImageCard imgSrc="https://placehold.co/200x260" imgAlt="Product details" description="Chestnut Latte"/>
             </div>
         </div>
     </div>

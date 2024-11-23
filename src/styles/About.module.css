@@ -1,0 +1,16 @@
+.about_container {
+    text-align: center;
+}
+
+.about_title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 7vw;
+}
+
+.about_winnie, .about_sharon {
+    display: inline-flex;
+    padding: 0 1rem;
+}

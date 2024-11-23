@@ -1,0 +1,18 @@
+.rsvp_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rsvp_btn {
+   padding: 1rem 2rem;
+   margin: 2rem; 
+   border: 0;
+   background-color: #BF5D30;
+   border-radius: 10px;
+}
+
+.rsvp_btn a {
+    color: #F0EADE;
+}

@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
 import GsapMagnetic from './MagneticEffect';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,22 +11,22 @@ const Navbar = () => {
             <ul className={styles.menu}>
                 <li>
                     <GsapMagnetic>
-                        <p><a className={styles.menu_item} href="/">About</a></p>
+                        <h3><Link className={styles.menu_item} to="/">Home</Link></h3>
                     </GsapMagnetic>
                 </li>
                 <li>
                     <GsapMagnetic>
-                        <p><a className={styles.menu_item} href="/">Menu</a></p>
+                        <h3><Link className={styles.menu_item} to="/About">About</Link></h3>
                     </GsapMagnetic>
                 </li>
                 <li>
                     <GsapMagnetic>
-                        <p><a className={styles.menu_item} href="/">Gallery</a></p>
+                        <h3><Link className={styles.menu_item} to="/Menu">Menu</Link></h3>
                     </GsapMagnetic>
                 </li>
                 <li>
                     <GsapMagnetic>
-                        <p><a className={styles.menu_item} href="/">Rsvp</a></p>
+                        <h3><Link className={styles.menu_item} to="/RSVP">Rsvp</Link></h3>
                     </GsapMagnetic>
                 </li>
             </ul>
