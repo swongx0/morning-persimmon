@@ -1,5 +1,6 @@
 import '../App.css';
 import ImageCard from '../components/ImageCard';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -22,6 +23,11 @@ function Home() {
                 <h2 className='location-title-alt'>Our Location <br/> and Hours</h2>
             </div>
             <div className='location-content'>
+                <h3>Location:</h3>
+                <p>Home Address</p>
+
+                <h3>Hours:</h3>
+                <p>Dec 21st @ 9am-1pm</p>
             </div>
         </div>
         <div className='image-card-section'>

@@ -1,16 +1,72 @@
 .about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 5rem;
+    transition: all 0.5s ease-in-out;
     text-align: center;
 }
 
-.about_title {
+/* .about_title {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     font-size: 7vw;
-}
+} */
 
 .about_winnie, .about_sharon {
-    display: inline-flex;
     padding: 0 1rem;
+    flex: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_img {
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about_img img:hover {
+    transform: scale(1.05);
+}
+
+.about_winnie.active {
+    flex: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_winnie .expanded_content {
+    background-color: #fff;
+    max-width: 0; /* Initial state */
+    max-height: 0; /* Initial state */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: max-width 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+.about_winnie.active .expanded_content {
+    background-color: #fff;
+    max-width: 100vw; /* Expanded state */
+    max-height: 100vh; /* Expanded state */
+}
+
+.about_sharon.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
 }

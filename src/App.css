@@ -105,13 +105,28 @@ a {
 .location-section {
   display: flex;
   background-color: #BF5D30;
+  flex-wrap: wrap;
+  justify-content: space-between;
   height: 550px;
-  padding: 5rem;
   align-items: center;
+}
+
+.location-title {
+  padding: 0 10rem;
+}
+
+.location-title, .location-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+.location-content {
+  color: #EDE8DB;
 }
 
 .location-title-alt {
   color: #EDE8DB;
+  text-align: center;
 }
 
 /* IMAGE CARD SECTION */
@@ -143,5 +158,13 @@ a {
     .image-card-container {
       flex-wrap: wrap;
       gap: 0;
+    }
+
+    .location-section {
+      flex-direction: column;
+    }
+
+    .location-title, .location-content {
+      margin: 10px auto;
     }
 }
