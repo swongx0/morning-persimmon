@@ -19,6 +19,7 @@
 
 .menu_item {
     transition: transform 0.2s ease, 0.2s ease;
+    cursor: pointer;
     /* color: #EDE8DB; */
     color: #F0EFEC;
 }

@@ -1,9 +1,11 @@
 import '../App.css';
 import styles from '../styles/Menu.module.css';
+import Navbar from '../components/Navbar';
 
 function Menu() {
   return (
     <div className={styles.menu_container}>
+      <Navbar />
       <div className={styles.menu_card}>
         <div className={styles.menu_title}>
           <h2>Menu</h2>

@@ -1,9 +1,10 @@
 .about_container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 1rem 5rem;
+    /* margin: 1rem 5rem; */
     transition: all 0.5s ease-in-out;
     text-align: center;
 }
@@ -15,6 +16,10 @@
     bottom: 0;
     font-size: 7vw;
 } */
+
+.about_us {
+    display: flex;
+}
 
 .about_winnie, .about_sharon {
     padding: 0 1rem;
