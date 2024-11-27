@@ -55,6 +55,31 @@ function Home() {
         L0 0`
         )
     }
+    
+    useEffect(() => {
+        const imageTilts = document.querySelectorAll('.img-tilt');
+        imageTilts.forEach(imageTilt => {
+            imageTilt.addEventListener("mousemove", event => {
+                const { top, bottom, left, right } = imageTilt.getBoundingClientRect();
+                const middleX = (right + left) / 2;
+                const middleY = (bottom + top) / 2;
+    
+                const clientX = event.clientX;
+                const clientY = event.clientY;
+    
+                const offsetX = (clientX - middleX) / middleX;
+                const offsetY = (middleY - clientY) / middleY;
+    
+                imageTilt.style.transform = `perspective(1000px) rotateY(${offsetX * 20}deg) rotateX(${offsetY * 10}deg) scale3d(1, 1, 1)`;
+            });
+        });
+
+        return () => {
+            imageTilts.forEach(imageTilt => {
+                imageTilt.removeEventListener("mousemove", null);
+            });
+        };
+    }, []);
 
     return (
         <div className={`container ${isFading ? 'fading' : ''}`}>
@@ -69,11 +94,17 @@ function Home() {
                 <img className="hero-image" src="/logo-alt.svg" alt="persimmon-character" width="200px"/>
             </div>
             <div className='story-section'>
-                <img className='img-responsive story-image' src="https://placehold.co/736x780" alt="our story"/>
+                <img id="imgTilt" className='img-responsive story-image img-tilt' src="https://placehold.co/300x400" alt="our story"/>
                 <div className='story-content'>
                     <h2>Our Story</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat sagittis sodales. Phasellus ullamcorper neque nisl, vitae finibus neque tincidunt nec. Cras quis accumsan libero. Morbi feugiat dui quis odio fringilla ultricies. Fusce vulputate mollis magna eu lobortis. Praesent in porta orci. Integer suscipit, eros vel pellentesque rhoncus, lacus orci molestie enim, eu condimentum eros eros nec lectus. Donec purus nulla, semper rhoncus facilisis ac, varius nec purus. Nunc vestibulum eros vel eros mollis efficitur non nec nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tempor luctus dignissim.</p>
                 </div>
+            </div>
+            <div className='story-section section-two'>
+                <div className='story-content'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat sagittis sodales. Phasellus ullamcorper neque nisl, vitae finibus neque tincidunt nec. Cras quis accumsan libero. Morbi feugiat dui quis odio fringilla ultricies. Fusce vulputate mollis magna eu lobortis. Praesent in porta orci. Integer suscipit, eros vel pellentesque rhoncus, lacus orci molestie enim, eu condimentum eros eros nec lectus. Donec purus nulla, semper rhoncus facilisis ac, varius nec purus. Nunc vestibulum eros vel eros mollis efficitur non nec nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tempor luctus dignissim.</p>
+                </div>
+                <img id="imgTilt" className='img-responsive story-image img-tilt' src="https://placehold.co/300x400" alt="our story"/>
             </div>
             <div className='image-card-section'>
                 <div className='image-card-container'>
