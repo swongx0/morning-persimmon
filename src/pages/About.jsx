@@ -1,30 +1,41 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
+import Modal from '../components/Modal';
 import styles from '../styles/About.module.css';
 import '../App.css'
 
 function About() {
 
-  const [isImgActive, setIsImgActive] = useState(false);
-
-  const handleToggle = () => {
-    setIsImgActive(!isImgActive);
-  }
+  const [openModal, setOpenModal] = useState(false)
 
   return (
     <div className={styles.about_container}>
+        {openModal && <Modal onClose={() => setOpenModal(false)} />}
         <Navbar />
         {/* <h2 className={styles.about_title}>Meet The <br />  Creators</h2> */}
         <div className={styles.about_us}>
-          <div className={`${styles.about_winnie} ${isImgActive ? styles.active : ''}`} onClick={handleToggle}>
+          <div className={styles.about_winnie}>
               <div className={styles.about_img}>
-                  {!isImgActive && <img src="https://placehold.co/600x700" />}
-                  {isImgActive && <div className={styles.expanded_content}>New Content</div>}
+                <img src="https://placehold.co/450x500" />
               </div>
           </div>
-        <div className={`${styles.about_sharon} ${isImgActive ? styles.hidden : ''}`}>
+        <div className={styles.about_sharon}>
+            <div className={styles.about_img_btn}>
+              <div className={styles.openModal_btn} onClick={() => setOpenModal(true)}>
+                <img src="https://placehold.co/450x500" />
+              </div>
+            </div>
+        </div>
+        </div>
+        <div className={styles.about_us}>
+          <div className={styles.about_winnie}>
+              <div className={styles.about_img_btn}>
+                <img src="https://placehold.co/450x500" />
+              </div>
+          </div>
+        <div className={styles.about_sharon}>
             <div className={styles.about_img}>
-                <img src="https://placehold.co/600x700" />
+                <img src="https://placehold.co/450x500" />
             </div>
         </div>
         </div>
