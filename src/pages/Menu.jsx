@@ -5,8 +5,9 @@ import Navbar from '../components/Navbar';
 function Menu() {
   return (
     <div className={styles.menu_container}>
-      <Navbar />
-      <div className={styles.menu_card}>
+      <Navbar className={styles.navbar} />
+      <img className={styles.menu_img} src="/MP-Menu-Design-Final2.jpg" alt="menu" width="500"/>
+      {/* <div className={styles.menu_card}>
         <div className={styles.menu_title}>
           <h2>Menu</h2>
         </div>
@@ -24,7 +25,7 @@ function Menu() {
               <p><li>Chestnut Cookies</li></p>
             </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

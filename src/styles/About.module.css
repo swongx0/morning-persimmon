@@ -20,6 +20,8 @@
 
 .about_us {
     display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .about_winnie, .about_sharon {
@@ -28,30 +30,102 @@
     transition: all 0.5s ease-in-out;
 }
 
-.about_img {
+.about_winnie {
     overflow: hidden;
     display: flex;
+    width: 450px;
+    height: 500px;
+    background-image: url("../../public/Brand-Photos-10.jpg");
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     align-items: center;
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.about_sharon {
+    overflow: hidden;
+    display: flex;
+    width: 450px;
+    height: 500px;
+    background-image: url("../../public/About-me-sharon.JPG");
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.about_content_baker {
+    background-image: url("../../public/About-me-baker-orange.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 450px;
+    height: 500px;
+    text-align: left;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.about_content_barista {
+    background-image: url("../../public/About-me-barista.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 450px;
+    height: 500px;
+    text-align: left;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.about_content_baker:hover {
+    background-image: none;
     transition: all 0.5s ease-in-out;
 }
 
-.about_img img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
+.about_content_baker p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    color: #F0EADE;
 }
 
-.about_img img:hover {
-    transform: scale(1.05);
+.about_content_baker p:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
 }
 
-.about_img_btn:hover {
-    filter: brightness(85%);
-    cursor: pointer;
+.about_content_baker:hover  {
+    background-color: #BF5D30;
+    transition: all 0.5s ease-in-out;
 }
 
-.about_winnie.active {
-    flex: 2;
+.about_content_barista:hover {
+    background-image: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_content_barista p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    color: #F0EADE;
+}
+
+.about_content_barista p:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_content_barista:hover  {
+    background-color: #BF5D30;
     transition: all 0.5s ease-in-out;
 }
