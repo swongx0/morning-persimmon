@@ -116,7 +116,7 @@ function Home() {
         <div ref={container} className='container'>
             {loading && (
                 <div ref={loader} className="loader">
-                    <img className='loader-animation' src="/loading-animation.GIF" alt="coffee walking"/>
+                    <img className='loader-animation' src="/loading-animation.GIF" alt="coffee walking" loading="lazy"/>
                     <h1 className='loader-text'>Loading...</h1>
                     <svg>
                         <path ref={path} fill="#007bff"></path>
@@ -128,7 +128,7 @@ function Home() {
                     <Navbar />
                     <div className='hero-section'>
                         <h1>morning <br/> persimmon</h1>
-                        <img className="hero-image" src="/logo-alt.svg" alt="persimmon-character" width="200px"/>
+                        <img className="hero-image" src="/logo-alt.svg" alt="persimmon-character" width="200px" loading="lazy"/>
                     </div>
                     {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#BF5D30" fill-opacity="1" d="M0,96L80,85.3C160,75,320,53,480,64C640,75,800,117,960,144C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
                     <svg className='story-section-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#BF5D30" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,64C480,53,600,75,720,90.7C840,107,960,117,1080,106.7C1200,96,1320,64,1380,48L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
@@ -154,7 +154,7 @@ function Home() {
                     </svg>
                     <div className='location-section'>
                         <div className='location-title'>
-                            <img className='location-title-alt' src="/location-image.PNG" alt="location and hours" width="700"/>
+                            <img className='location-title-alt' src="/location-image.PNG" alt="location and hours" width="700" loading="lazy"/>
                         </div>
                         <div className='location-content'>
                             <h2>Location:</h2>

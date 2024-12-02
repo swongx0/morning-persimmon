@@ -32,6 +32,7 @@ function RSVP() {
             alt="dancing logo"          
             className={index === currentIndex ? styles.active : ''}
             style={{ opacity: index === currentIndex ? 1 : 0, transition: 'opacity 0.5s' }}
+            loading="lazy"
           />
         ))}
       </div>
