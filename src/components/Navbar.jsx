@@ -1,10 +1,11 @@
 'use client';
-import React from 'react'
+import React from 'react';
 import styles from '../styles/Navbar.module.css'
 import GsapMagnetic from './MagneticEffect';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({setIsFading}) => {  
+const Navbar = () => {  
+
   return (
     <header className={styles.navbar}>
         <nav>
