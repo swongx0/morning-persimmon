@@ -139,8 +139,8 @@ function Home() {
                             <p>Hi there, and welcome to our little home cafe! What started as a fun hobby for us—baking treats and making coffee—turned into our happy escape from the daily grind of the 9-5. It was our way to slow down, share some sweet moments, and make life just a bit cozier. It all began as a silly idea between two sisters, but it quickly grew into something special. We started baking and brewing for friends and family, and before we knew it, the smell of fresh pastries and coffee filled our home, and we thought, why not create a space where we can share that love with more people? This isn’t just a cafe; it’s a piece of our home. A warm, welcoming spot where you can enjoy homemade goodies, sip on coffee, and take a breather. Whether you’re here for a quick pick-me-up, a chat, or just something sweet, we’re so happy you stopped by and thank you for being a part of this journey with us. Make yourself at home, and let’s share a little bit of positivity and happiness together!</p>
                         </div>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#BF5D30" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,64C480,53,600,75,720,90.7C840,107,960,117,1080,106.7C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-                    <svg className="w-full mb-40" viewBox="0 0 250 90">
+                    <svg className='story-section-svg-bottom' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#BF5D30" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,64C480,53,600,75,720,90.7C840,107,960,117,1080,106.7C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+                    <svg className="w-full mb-40 morning-text" viewBox="0 0 250 90" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 
                         <path fill="none" id="curve" d="m0,88.5c61.37,0,61.5-68,126.5-68,58,0,51,68,123,68"/>
 
