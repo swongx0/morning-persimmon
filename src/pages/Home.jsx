@@ -27,6 +27,7 @@ function Home() {
         setTimeout(() => {
             requestAnimationFrame(animate);
         }, 3000);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
 
       const animate = (timestamp) => {
@@ -98,6 +99,7 @@ function Home() {
                 path.setAttribute("startOffset", -65 + (i * 64) + (e * 65) + "%");
             })
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect( () => {
