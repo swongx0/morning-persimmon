@@ -26,7 +26,7 @@ const Navbar = ({setIsFading}) => {
                 </li>
                 <li>
                     <GsapMagnetic>
-                        <h3><Link className={styles.menu_item} to="/Rsvp">Rsvp</Link></h3>
+                        <h3><Link className={styles.menu_item} to="/Rsvp">RSVP</Link></h3>
                     </GsapMagnetic>
                 </li>
             </ul>
