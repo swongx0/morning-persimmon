@@ -7,25 +7,6 @@ function Menu() {
     <div className={styles.menu_container}>
       <Navbar className={styles.navbar} />
       <img className={styles.menu_img} src="/MP-Menu-Design-Final2.jpg" alt="menu" width="500"/>
-      {/* <div className={styles.menu_card}>
-        <div className={styles.menu_title}>
-          <h2>Menu</h2>
-        </div>
-        <div className={styles.menu_items}>
-          <h4 className={styles.menu_coffee}>Coffee</h4>
-            <ul className={styles.menu_item_list}>
-              <p><li>Chestnut Latte</li></p>
-              <p><li>Persimmon Latte</li></p>
-            </ul>
-          <hr />
-          <h4 className={styles.menu_pastries}>Pastries</h4>
-            <ul className={styles.menu_item_list}>
-              <p><li>Mini Loaf</li></p>
-              <p><li>Snowball Cookies</li></p>
-              <p><li>Chestnut Cookies</li></p>
-            </ul>
-        </div>
-      </div> */}
     </div>
   );
 }

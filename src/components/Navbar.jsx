@@ -2,19 +2,9 @@
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
 import GsapMagnetic from './MagneticEffect';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({setIsFading}) => {  
-  const navigate = useNavigate();
-
-  const handleNavigation = (path) => {
-    setIsFading(true); // Trigger the fading class
-    setTimeout(() => {
-        navigate(path); // Navigate after fading out
-        setIsFading(false); // Reset fading (not strictly necessary here)
-    }, 500); // Match CSS transition duration
-};
-
   return (
     <header className={styles.navbar}>
         <nav>

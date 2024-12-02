@@ -5,16 +5,18 @@ import About from './pages/About';
 import Menu from './pages/Menu';
 import RSVP from './pages/RSVP';
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="App">
-      <Routes>
+      <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Menu" element={<Menu />} />
-          <Route path="/RSVP" element={<RSVP />} />
+          <Route path="/Rsvp" element={<RSVP />} />
       </Routes>
     </div>
   );
