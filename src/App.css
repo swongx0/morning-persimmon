@@ -109,7 +109,7 @@ a {
 
 .loader-text {
   position: absolute;
-  top: 40%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -30%);
   font-size: 2rem;
@@ -220,6 +220,7 @@ a {
   height: 600px;
   align-items: center;
   gap: 10rem;
+  margin-bottom: 3rem;
 }
 
 .location-title {

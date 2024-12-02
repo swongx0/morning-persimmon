@@ -131,3 +131,11 @@
     background-color: #BF5D30;
     transition: all 0.5s ease-in-out;
 }
+
+/* MOBILE */
+@media screen and (max-width: 720px) {
+    .about_us {
+        flex-wrap: wrap;
+        width: 400px;
+    }
+}

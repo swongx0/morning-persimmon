@@ -95,7 +95,7 @@ function Home() {
     useEffect( () => {
         scrollYProgress.on("change", e => {
             paths.current.forEach( (path, i) => {
-                path.setAttribute("startOffset", -60 + (i * 64) + (e * 65) + "%");
+                path.setAttribute("startOffset", -65 + (i * 64) + (e * 65) + "%");
             })
         })
     }, []);
@@ -138,21 +138,6 @@ function Home() {
                         </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#BF5D30" fill-opacity="1" d="M0,160L60,138.7C120,117,240,75,360,64C480,53,600,75,720,90.7C840,107,960,117,1080,106.7C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-                    {/* <div className='story-section section-two'>
-                        <div className='story-content'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat sagittis sodales. Phasellus ullamcorper neque nisl, vitae finibus neque tincidunt nec. Cras quis accumsan libero. Morbi feugiat dui quis odio fringilla ultricies. Fusce vulputate mollis magna eu lobortis. Praesent in porta orci. Integer suscipit, eros vel pellentesque rhoncus, lacus orci molestie enim, eu condimentum eros eros nec lectus. Donec purus nulla, semper rhoncus facilisis ac, varius nec purus. Nunc vestibulum eros vel eros mollis efficitur non nec nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tempor luctus dignissim.</p>
-                        </div>
-                        <img id="imgTilt" className='img-responsive story-image img-tilt' src="/Morning-Persimmon-Eco-Bag-Mockup.jpg" alt="our story" width="400"/>
-                    </div> */}
-                    {/* <div className='image-card-section'>
-                        <div className='image-card-container'>
-                            <ImageCard imgSrc="https://placehold.co/200x200" imgAlt="Product details" description="Chestnut Latte"/>
-                            <ImageCard imgSrc="https://placehold.co/200x200" imgAlt="Product details" description="Chestnut Latte"/>
-                            <ImageCard imgSrc="https://placehold.co/200x200" imgAlt="Product details" description="Chestnut Latte"/>
-                            <ImageCard imgSrc="https://placehold.co/200x200" imgAlt="Product details" description="Chestnut Latte"/>
-                            <ImageCard imgSrc="https://placehold.co/200x200" imgAlt="Product details" description="Chestnut Latte"/>
-                        </div>
-                    </div> */}
                     <svg className="w-full mb-40" viewBox="0 0 250 90">
 
                         <path fill="none" id="curve" d="m0,88.5c61.37,0,61.5-68,126.5-68,58,0,51,68,123,68"/>
@@ -160,7 +145,7 @@ function Home() {
                         <text className="text-[6px] uppercase" style={{fill: "#3A4F13"}}>
                             {
                                 [...Array(3)].map((_, i) => {
-                                    return <textPath key={i} ref={ref => paths.current[i] = ref} startOffset={i * 67 + "%"} href="#curve"> Your morning pick-me up · &nbsp;</textPath>
+                                    return <textPath key={i} ref={ref => paths.current[i] = ref} startOffset={(i * 67 + 5) + "%"} href="#curve"> Your morning pick-me up · &nbsp;</textPath>
                                 })
                             }
                         </text>
@@ -171,7 +156,7 @@ function Home() {
                         </div>
                         <div className='location-content'>
                             <h2>Location:</h2>
-                            <p>Home Address</p>
+                            <p>Check RSVP</p>
 
                             <h2>Hours:</h2>
                             <p>Dec 21st @ 9am-1pm</p>
