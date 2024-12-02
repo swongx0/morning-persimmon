@@ -29,7 +29,7 @@ function RSVP() {
           <img
             key={index}
             src={src}
-            alt={`Image ${index + 1}`}
+            alt="dancing logo"          
             className={index === currentIndex ? styles.active : ''}
             style={{ opacity: index === currentIndex ? 1 : 0, transition: 'opacity 0.5s' }}
           />
