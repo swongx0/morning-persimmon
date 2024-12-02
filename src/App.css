@@ -310,6 +310,16 @@ a {
     .morning-text {
       margin-top: 2rem;
     }
+
+    .story-section-svg {
+      width: 466px;
+      transform: translate(-27px, 1px);
+    }
+  
+    .story-section-svg-bottom {
+      width: 432px;
+      transform: translate(0px, -1px);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -334,7 +344,7 @@ a {
     transform: translate(-27px, 1px);
   }
 
-  .story-section-bottom {
+  .story-section-svg-bottom {
     width: 432px;
     transform: translate(0px, -1px);
   }
