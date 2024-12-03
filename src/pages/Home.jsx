@@ -102,19 +102,15 @@ function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    useEffect(() => {
-        const lenis = new Lenis();
-        lenis.stop(); // Pause Lenis scrolling
-    
+    useEffect( () => {
+        const lenis = new Lenis()
+
         function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
+            lenis.raf(time)
+            requestAnimationFrame(raf)
         }
-        requestAnimationFrame(raf);
-    
-        // Resume scrolling after loading is done
-        return () => lenis.start();
-    }, [loading]);
+        requestAnimationFrame(raf)
+    }, []);
 
     return (
         <div ref={container} className='container'>
