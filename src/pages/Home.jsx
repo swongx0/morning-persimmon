@@ -30,22 +30,22 @@ function Home() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
 
-      const animate = (timestamp) => {
-        if(start === undefined){
-          start = timestamp
-        }
+    //   const animate = (timestamp) => {
+    //     if(start === undefined){
+    //       start = timestamp
+    //     }
     
-        const elapsed = timestamp - start;
-        loader.current.style.top = easeOutQuad(elapsed, 0, -loaderHeight(), duration) + "px";
+    //     const elapsed = timestamp - start;
+    //     loader.current.style.top = easeOutQuad(elapsed, 0, -loaderHeight(), duration) + "px";
 
-        const newCurve = easeOutQuad(elapsed, initialCurve, -200, duration)
-        setPath(newCurve);
-        if(elapsed < duration){
-          requestAnimationFrame(animate)
-        } else {
-            setLoading(false); // Hide loader after animation
-        }
-      }
+    //     const newCurve = easeOutQuad(elapsed, initialCurve, -200, duration)
+    //     setPath(newCurve);
+    //     if(elapsed < duration){
+    //       requestAnimationFrame(animate)
+    //     } else {
+    //         setLoading(false); // Hide loader after animation
+    //     }
+    //   }
     
       const easeOutQuad = (time, start, end, duration) => {
         return -end * (time /= duration) * (time - 2) + start;
