@@ -9,13 +9,10 @@ function Home() {
     const loader = useRef(null);
     const path = useRef(null);
     const initialCurve = 200;  
-    // eslint-disable-next-line no-unused-vars
     const duration = 600;
     const paths = useRef([]);
     const container = useRef();
-    // eslint-disable-next-line no-unused-vars
     let start;
-    // eslint-disable-next-line no-unused-vars
     const [loading, setLoading] = useState(true);
 
     const { scrollYProgress } = useScroll({
@@ -26,28 +23,28 @@ function Home() {
 
     useEffect(() => {
         setPath(initialCurve)
-        // setTimeout(() => {
-        //     requestAnimationFrame(animate);
-        // }, 2000);
+        setTimeout(() => {
+            requestAnimationFrame(animate);
+        }, 2000);
       // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
 
-    //   const animate = (timestamp) => {
-    //     if(start === undefined){
-    //       start = timestamp
-    //     }
+      const animate = (timestamp) => {
+        if(start === undefined){
+          start = timestamp
+        }
     
-    //     const elapsed = timestamp - start;
-    //     loader.current.style.top = easeOutQuad(elapsed, 0, -loaderHeight(), duration) + "px";
+        const elapsed = timestamp - start;
+        loader.current.style.top = easeOutQuad(elapsed, 0, -loaderHeight(), duration) + "px";
 
-    //     const newCurve = easeOutQuad(elapsed, initialCurve, -200, duration)
-    //     setPath(newCurve);
-    //     if(elapsed < duration){
-    //       requestAnimationFrame(animate)
-    //     } else {
-    //         setLoading(false); // Hide loader after animation
-    //     }
-    //   }
+        const newCurve = easeOutQuad(elapsed, initialCurve, -200, duration)
+        setPath(newCurve);
+        if(elapsed < duration){
+          requestAnimationFrame(animate)
+        } else {
+            setLoading(false); // Hide loader after animation
+        }
+      }
 
        // eslint-disable-next-line no-unused-vars
       const easeOutQuad = (time, start, end, duration) => {
