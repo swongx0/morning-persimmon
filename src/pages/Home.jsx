@@ -102,15 +102,19 @@ function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    useEffect( () => {
-        const lenis = new Lenis()
-
+    useEffect(() => {
+        const lenis = new Lenis();
+        lenis.stop(); // Pause Lenis scrolling
+    
         function raf(time) {
-            lenis.raf(time)
-            requestAnimationFrame(raf)
+            lenis.raf(time);
+            requestAnimationFrame(raf);
         }
-        requestAnimationFrame(raf)
-    }, []);
+        requestAnimationFrame(raf);
+    
+        // Resume scrolling after loading is done
+        return () => lenis.start();
+    }, [loading]);
 
     return (
         <div ref={container} className='container'>
@@ -118,7 +122,7 @@ function Home() {
                 <div ref={loader} className="loader">
                     <img className='loader-animation' src="/loading-animation.GIF" alt="coffee walking" loading="lazy"/>
                     <h1 className='loader-text'>Loading...</h1>
-                    <svg>
+                    <svg width="100%" height="100%">
                         <path ref={path} fill="#007bff"></path>
                     </svg>
                 </div>

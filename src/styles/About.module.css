@@ -137,5 +137,6 @@
     .about_us {
         flex-wrap: wrap;
         width: 400px;
+        padding: 1rem;
     }
 }
