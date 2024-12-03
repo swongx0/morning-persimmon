@@ -9,11 +9,13 @@ function Home() {
     const loader = useRef(null);
     const path = useRef(null);
     const initialCurve = 200;  
+    // eslint-disable-next-line no-unused-vars
     const duration = 600;
     const paths = useRef([]);
     const container = useRef();
+    // eslint-disable-next-line no-unused-vars
     let start;
-    
+    // eslint-disable-next-line no-unused-vars
     const [loading, setLoading] = useState(true);
 
     const { scrollYProgress } = useScroll({
@@ -46,7 +48,8 @@ function Home() {
     //         setLoading(false); // Hide loader after animation
     //     }
     //   }
-    
+
+       // eslint-disable-next-line no-unused-vars
       const easeOutQuad = (time, start, end, duration) => {
         return -end * (time /= duration) * (time - 2) + start;
       }
