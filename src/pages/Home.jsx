@@ -26,7 +26,7 @@ function Home() {
         setPath(initialCurve)
         setTimeout(() => {
             requestAnimationFrame(animate);
-        }, 3000);
+        }, 2000);
       // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
 

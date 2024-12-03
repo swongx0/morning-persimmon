@@ -321,6 +321,21 @@ a {
       width: 432px;
       transform: translate(0px, -1px);
     }
+
+    .loader{
+      height: calc(100vh + 500px);
+    }
+
+    .loader-text {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+
+    .loader-animation {
+      top: 22%;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -364,5 +379,15 @@ a {
 
   .morning-text {
     margin-top: 2rem;
+  }
+
+  .loader{
+    height: calc(100vh + 500px);
+  }
+
+  .loader-text {
+    position: absolute;
+    top: 29%;
+    left: 50%;
   }
 }
